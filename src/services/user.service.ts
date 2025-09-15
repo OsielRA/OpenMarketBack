@@ -1,6 +1,6 @@
-import type { IUserRepository } from '../repositories/interfaces/user.repository.js';
-import { NewUserDTO } from '../shared/dto/user.dto.js';
-import { HttpError } from '../shared/errors/httpError.js';
+import { IUserRepository } from '@/repositories/interfaces';
+import { NewUserDTO } from '@/shared/dto';
+import { HttpError } from '@/shared/errors/httpError';
 
 export class UserService {
   constructor(private readonly repo: IUserRepository) {}
